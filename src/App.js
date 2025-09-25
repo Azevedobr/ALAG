@@ -1,3 +1,4 @@
+// Versão atualizada - 2025
 import { useState } from 'react';
 import './App.css';
 
