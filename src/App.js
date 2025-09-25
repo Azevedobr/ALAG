@@ -500,66 +500,7 @@ function HomePage({ setCurrentPage }) {
   );
 }
 
-function ContatoPage() {
-  return (
-    <div className="contact-page">
-      <section className="contact-hero">
-        <div className="container">
-          <h1>Entre em Contato</h1>
-          <p>Estamos prontos para atender você</p>
-        </div>
-      </section>
-      
-      <section className="contact-content">
-        <div className="container">
-          <div className="contact-grid">
-            <div className="contact-info">
-              <h2>Informações de Contato</h2>
-              <div className="info-item">
-                <h3>Telefone</h3>
-                <p>(11) 99999-9999</p>
-              </div>
-              <div className="info-item">
-                <h3>WhatsApp</h3>
-                <p>(11) 99999-9999</p>
-              </div>
-              <div className="info-item">
-                <h3>Email</h3>
-                <p>contato@matossilva.com.br</p>
-              </div>
-              <div className="info-item">
-                <h3>Endereço</h3>
-                <p>Rua das Ferragens, 123<br/>Bairro Industrial - São Paulo/SP</p>
-              </div>
-              <div className="info-item">
-                <h3>Horário de Funcionamento</h3>
-                <p>Segunda a Sexta: 8h às 18h<br/>Sábado: 8h às 12h</p>
-              </div>
-            </div>
-            
-            <div className="contact-form">
-              <h2>Solicite um Orçamento</h2>
-              <form>
-                <input type="text" placeholder="Seu nome" required />
-                <input type="email" placeholder="Seu email" required />
-                <input type="tel" placeholder="Seu telefone" required />
-                <select required>
-                  <option value="">Selecione o serviço</option>
-                  <option value="portoes">Portões</option>
-                  <option value="grades">Grades</option>
-                  <option value="estruturas">Estruturas Metálicas</option>
-                  <option value="outros">Outros</option>
-                </select>
-                <textarea placeholder="Descreva seu projeto" rows="5" required></textarea>
-                <button type="submit" className="submit-button">Enviar Solicitação</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+
 
 function TrabalheConoscoPage() {
   return (
@@ -809,13 +750,13 @@ function ServicosPage() {
             <div className="servico-content">
               <div className="servico-text">
                 <h2>ESTRUTURAS METÁLICAS</h2>
-                <p>Projetos e execução de estruturas metálicas para construção civil, industrial e comercial. Trabalhamos com cálculos estruturais e projetos personalizados.</p>
+                <p>Projetos completos de estruturas metálicas para construção civil e industrial. Desenvolvemos soluções sob medida com cálculo estrutural e acabamento profissional.</p>
                 <ul>
-                  <li>Coberturas e telhões metálicos</li>
-                  <li>Escadas e corrimãos</li>
-                  <li>Estruturas para galpões</li>
+                  <li>Estruturas para telhados</li>
                   <li>Mezaninos e passarelas</li>
-                  <li>Estruturas industriais complexas</li>
+                  <li>Coberturas metálicas</li>
+                  <li>Estruturas industriais</li>
+                  <li>Projetos personalizados</li>
                 </ul>
                 <button className="servico-button">SOLICITAR ORÇAMENTO</button>
               </div>
@@ -835,14 +776,14 @@ function ServicosPage() {
                 </div>
               </div>
               <div className="servico-text">
-                <h2>SOLDAS ESPECIAIS E REPARO</h2>
-                <p>Serviços especializados de solda com equipamentos modernos e profissionais certificados. Atendemos desde pequenos reparos até grandes projetos industriais.</p>
+                <h2>SOLDAS ESPECIAIS</h2>
+                <p>Serviços especializados de solda com técnicas avançadas e equipamentos de última geração. Atendemos projetos que exigem alta precisão e qualidade.</p>
                 <ul>
-                  <li>Solda MIG/MAG para aço carbono</li>
-                  <li>Solda TIG para aço inox e alumínio</li>
-                  <li>Solda de reparo e manutenção</li>
-                  <li>Solda em campo e oficina</li>
-                  <li>Certificados de qualidade</li>
+                  <li>Solda MIG/MAG</li>
+                  <li>Solda TIG</li>
+                  <li>Solda de alumínio</li>
+                  <li>Reparos e manutenção</li>
+                  <li>Soldas em campo</li>
                 </ul>
                 <button className="servico-button">SOLICITAR ORÇAMENTO</button>
               </div>
@@ -850,31 +791,74 @@ function ServicosPage() {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
 
-      <section className="processo">
+function ContatoPage() {
+  return (
+    <div className="contato-page">
+      <section className="contato-hero">
         <div className="container">
-          <h2>NOSSO PROCESSO DE TRABALHO</h2>
-          <div className="processo-grid">
-            <div className="processo-step">
-              <div className="step-number">1</div>
-              <h3>CONSULTA INICIAL</h3>
-              <p>Conversa para entender suas necessidades e expectativas do projeto.</p>
+          <h1>CONTATO</h1>
+          <p>Entre em contato conosco</p>
+        </div>
+      </section>
+      
+      <section className="contato-info">
+        <div className="container">
+          <div className="contato-grid">
+            <div className="contato-item">
+              <div className="contato-icon">📞</div>
+              <h3>TELEFONE</h3>
+              <p>(11) 95841-5105</p>
+              <a href="tel:+5511958415105" className="contato-link">Ligar agora</a>
             </div>
-            <div className="processo-step">
-              <div className="step-number">2</div>
-              <h3>PROJETO E ORÇAMENTO</h3>
-              <p>Desenvolvimento do projeto técnico e apresentação do orçamento detalhado.</p>
+            <div className="contato-item">
+              <div className="contato-icon">💬</div>
+              <h3>WHATSAPP</h3>
+              <p>(11) 95841-5105</p>
+              <a href="https://api.whatsapp.com/send?phone=5511958415105" className="contato-link" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
             </div>
-            <div className="processo-step">
-              <div className="step-number">3</div>
-              <h3>PRODUÇÃO</h3>
-              <p>Fabricação com materiais de qualidade e acompanhamento constante.</p>
+            <div className="contato-item">
+              <div className="contato-icon">📍</div>
+              <h3>ENDEREÇO</h3>
+              <p>São Paulo, SP</p>
+              <a href="#" className="contato-link">Ver no mapa</a>
             </div>
-            <div className="processo-step">
-              <div className="step-number">4</div>
-              <h3>INSTALAÇÃO</h3>
-              <p>Instalação profissional com acabamento perfeito e limpeza do local.</p>
+            <div className="contato-item">
+              <div className="contato-icon">⏰</div>
+              <h3>HORÁRIO</h3>
+              <p>Segunda a Sexta: 8h às 18h</p>
+              <p>Sábado: 8h às 12h</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="contato-form">
+        <div className="container">
+          <div className="form-container">
+            <h2>Solicite um Orçamento</h2>
+            <form className="orcamento-form">
+              <div className="form-row">
+                <input type="text" placeholder="Nome completo" required />
+                <input type="email" placeholder="E-mail" required />
+              </div>
+              <div className="form-row">
+                <input type="tel" placeholder="Telefone" required />
+                <select required>
+                  <option value="">Tipo de serviço</option>
+                  <option value="portoes">Portões</option>
+                  <option value="grades">Grades</option>
+                  <option value="estruturas">Estruturas Metálicas</option>
+                  <option value="soldas">Soldas Especiais</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+              <textarea placeholder="Descreva seu projeto" rows="4" required></textarea>
+              <button type="submit" className="submit-button">Solicitar Orçamento</button>
+            </form>
           </div>
         </div>
       </section>
